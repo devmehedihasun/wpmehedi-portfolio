@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mehedi Hasan — WordPress & Theme Developer</title>
+<meta name="description" content="Mehedi Hasan is a WordPress & Theme Developer with 3+ years of experience building custom themes, plugins, and high-performance WordPress solutions.">
+<meta name="keywords" content="WordPress Developer, Theme Developer, PHP Developer, Elementor, Gutenberg, Plugin Development, Dhaka Bangladesh">
+<meta name="author" content="Mehedi Hasan">
+<link rel="canonical" href="https://mehedihasan.dev/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mehedi Hasan — WordPress & Theme Developer">
+<meta property="og:description" content="Building high-performance WordPress themes, plugins and custom experiences. 3+ years turning business ideas into production-ready WordPress solutions.">
+<meta property="og:image" content="assets/images/profile.jpg">
+<meta property="og:url" content="https://mehedihasan.dev/">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mehedi Hasan — WordPress & Theme Developer">
+<meta name="twitter:description" content="Building high-performance WordPress themes, plugins and custom experiences.">
+<meta name="twitter:image" content="assets/images/profile.jpg">
+
+<!-- Favicon -->
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============ SVG SPRITE (block icons used throughout) ============ -->
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="icon-paragraph" viewBox="0 0 24 24"><path d="M12 4v16M8 4h9a4 4 0 010 8H8" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="icon-columns" viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="16" rx="1" stroke="currentColor" stroke-width="1.6" fill="none"/><rect x="14" y="4" width="7" height="16" rx="1" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+  <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="9" cy="10" r="1.6" fill="currentColor"/><path d="M4 17l5-5 4 4 3-3 4 4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="icon-button" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="8" rx="4" stroke="currentColor" stroke-width="1.6" fill="none"/></symbol>
+  <symbol id="icon-list" viewBox="0 0 24 24"><circle cx="5" cy="6" r="1.4" fill="currentColor"/><circle cx="5" cy="12" r="1.4" fill="currentColor"/><circle cx="5" cy="18" r="1.4" fill="currentColor"/><path d="M10 6h11M10 12h11M10 18h11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- ============ CURSOR GLOW ============ -->
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-mark">
+    <span class="preloader-bracket">&lt;</span>
+    <span class="preloader-text">MH</span>
+    <span class="preloader-bracket">/&gt;</span>
+  </div>
+</div>
+
+<!-- ============ SKIP LINK ============ -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#home" class="logo" aria-label="Mehedi Hasan — home">
+      <span class="logo-bracket">&lt;</span>Mehedi<span class="logo-accent">.dev</span><span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-nav>Experience</a></li>
+        <li><a href="#portfolio" class="nav-link" data-nav>Portfolio</a></li>
+        <li><a href="#process" class="nav-link" data-nav>Process</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false">
+        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+      </button>
+      <a href="#contact" class="btn btn-sm btn-primary header-cta">Let's talk</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid"></div>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+    </div>
+
+    <div class="floating-blocks" aria-hidden="true">
+      <div class="fblock fblock-1"><svg><use href="#icon-columns"/></svg><span>Columns</span></div>
+      <div class="fblock fblock-2"><svg><use href="#icon-image"/></svg><span>Image</span></div>
+      <div class="fblock fblock-3"><svg><use href="#icon-button"/></svg><span>Button</span></div>
+      <div class="fblock fblock-4"><svg><use href="#icon-paragraph"/></svg><span>Paragraph</span></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy" data-aos="fade-up">
+        <p class="eyebrow"><span class="dot"></span>Available for freelance work</p>
+        <h1 class="hero-title">
+          Mehedi Hasan builds
+          <span class="hero-type-wrap">WordPress that <span class="hero-typed" id="heroTyped"></span></span>
+        </h1>
+        <p class="hero-desc">
+          WordPress Theme &amp; Plugin Developer with 3+ years turning business ideas into fast, custom-built
+          websites — from core PHP and bespoke plugins to pixel-accurate Elementor and Gutenberg builds.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Start a project
+          </a>
+          <a href="assets/resume/Mehedi-Hasan-Resume.pdf" class="btn btn-outline" download>
+            <i class="fa-solid fa-download"></i> Download resume
+          </a>
+        </div>
+        <div class="hero-social" aria-label="Social links">
+          <a href="https://profiles.wordpress.org/mehedidev/" target="_blank" rel="noopener" aria-label="WordPress profile"><i class="fa-brands fa-wordpress"></i></a>
+          <a href="https://www.linkedin.com/in/devmehedihasan" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:mehedidev404@gmail.com" aria-label="Email Mehedi"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/devmehedihasun" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
+        <div class="editor-window">
+          <div class="editor-titlebar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="editor-title">block-editor.php</span>
+          </div>
+          <div class="editor-toolbar">
+            <span class="editor-tool"><i class="fa-solid fa-plus"></i></span>
+            <span class="editor-tool"><i class="fa-solid fa-arrow-rotate-left"></i></span>
+            <span class="editor-tool"><i class="fa-solid fa-arrow-rotate-right"></i></span>
+            <span class="editor-status"><span class="status-dot"></span> Saved</span>
+          </div>
+          <div class="editor-canvas">
+            <div class="editor-block eb-heading">
+              <span class="eb-label">core/heading</span>
+              <div class="eb-line eb-line-lg"></div>
+            </div>
+            <div class="editor-block eb-paragraph">
+              <span class="eb-label">core/paragraph</span>
+              <div class="eb-line"></div>
+              <div class="eb-line short"></div>
+            </div>
+            <div class="editor-block eb-columns" id="typingBlock">
+              <span class="eb-label">custom/hero-block</span>
+              <div class="eb-typing"><span id="editorTyped"></span><span class="caret">|</span></div>
+            </div>
+            <div class="editor-block eb-button">
+              <span class="eb-label">core/button</span>
+              <div class="eb-btn-mock">Publish</div>
+            </div>
+          </div>
+        </div>
+        <div class="stat-chip chip-1"><i class="fa-solid fa-code-branch"></i> 12+ themes shipped</div>
+        <div class="stat-chip chip-2"><i class="fa-solid fa-bolt"></i> 3+ yrs experience</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <span>Scroll</span>
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <span class="block-tag" aria-hidden="true">core/about-block</span>
+    <div class="container">
+      <p class="section-eyebrow" data-aos="fade-up">01 — About</p>
+      <div class="about-grid">
+        <div class="about-media" data-aos="fade-right">
+          <div class="about-photo-frame">
+            <img src="assets/images/profile.jpg" alt="Portrait of Mehedi Hasan" width="480" height="480" loading="lazy">
+            <span class="photo-tag"><i class="fa-brands fa-wordpress"></i> WP Developer</span>
+          </div>
+        </div>
+
+        <div class="about-copy" data-aos="fade-left">
+          <h2 class="section-title">I turn briefs into <span class="text-accent">production-ready</span> WordPress builds.</h2>
+          <p class="about-text">
+            Hi, I'm Mehedi — a WordPress &amp; Theme Developer based in Dhaka, Bangladesh, with over three years
+            of experience transforming business ideas into high-performance web solutions. I enjoy solving
+            complex problems through core PHP, custom plugin development, and clean UI implementation.
+          </p>
+          <p class="about-text">
+            Whether it's building a theme from scratch, optimizing load speed, or wiring up a third-party API,
+            writing clean, maintainable code isn't just my job — it's something I genuinely enjoy and I'm
+            always eager to learn more.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
+              <span class="stat-number" data-count="12">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Themes shipped for themeforest</span>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="80">
+              <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years experience</span>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="160">
+              <span class="stat-number" data-count="300">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Happy clients</span>
+            </div>
+            <div class="stat-card" data-aos="fade-up" data-aos-delay="240">
+              <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills">
+    <span class="block-tag" aria-hidden="true">custom/skills-grid</span>
+    <div class="container">
+      <p class="section-eyebrow" data-aos="fade-up">02 — Skills</p>
+      <h2 class="section-title" data-aos="fade-up">The block library I build with.</h2>
+      <p class="section-sub" data-aos="fade-up">Every project draws from the same set of reliable, battle-tested tools.</p>
+
+      <div class="skills-categories" data-aos="fade-up">
+        <div class="skill-category-group">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-code"></i> Development</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-head"><span>HTML,CSS,SASS,BOOTSTRAP,TAILWIND CSS</span><span class="skill-percent">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div> 
+              <div class="skill-bar-item">
+              <div class="skill-bar-head"><span>JavaScript, REACT & JS Libraries</span><span class="skill-percent">85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-head"><span>PHP (OOP)</span><span class="skill-percent">95%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-head"><span>MySQL</span><span class="skill-percent">88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            
+            <div class="skill-bar-item">
+              <div class="skill-bar-head"><span>Custom Theme & Plugin Development</span><span class="skill-percent">96%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="96"></div></div>
+            </div>
+           
+          
+          </div>
+        </div>
+
+        <div class="skill-category-group">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-layer-group"></i> Platforms &amp; Tools</h3>
+          <div class="tech-card-grid">
+            <div class="tech-card"><i class="fa-solid fa-puzzle-piece"></i><span>Elementor, Gutenberg, DIVI</span></div>
+            <div class="tech-card"><i class="fa-brands fa-wordpress"></i><span>WooCommerce</span></div>
+            <div class="tech-card"><i class="fa-brands fa-figma"></i><span>Figma to WP</span></div>
+            <div class="tech-card"><i class="fa-solid fa-swatchbook"></i><span>Framer</span></div>
+            <div class="tech-card"><i class="fa-brands fa-shopify"></i><span>Shopify</span></div>
+            <div class="tech-card"><i class="fa-solid fa-code-branch"></i><span>Webflow</span></div>
+            <div class="tech-card"><i class="fa-brands fa-square-full"></i><span>Squarespace</span></div>
+            <div class="tech-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+            <div class="tech-card"><i class="fa-solid fa-gauge-high"></i><span>Speed Optimization</span></div>
+            <div class="tech-card"><i class="fa-solid fa-comments"></i><span>Client Communication</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <span class="block-tag" aria-hidden="true">core/timeline</span>
+    <div class="container">
+      <p class="section-eyebrow" data-aos="fade-up">03 — Experience</p>
+      <h2 class="section-title" data-aos="fade-up">Where the builds happened.</h2>
+
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Jul 2025 — Feb 2026</span>
+            <h3 class="timeline-role">WordPress Developer</h3>
+            <p class="timeline-company">Backbencher.studio — Theme &amp; Plugin Developer</p>
+            <ul class="timeline-list">
+              <li>Built and customized WordPress themes and plugins from scratch based on specific client requirements.</li>
+              <li>Modified and extended existing third-party plugins to add complex, tailor-made functionalities.</li>
+              <li>Led technical meetings directly with clients to gather requirements and ensure project alignment.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>PHP</span><span>WordPress</span><span>Plugin Dev</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Dec 2024 — Jun 2025</span>
+            <h3 class="timeline-role">WordPress Theme Developer</h3>
+            <p class="timeline-company">Softcrafty — Dhaka, Bangladesh (Remote)</p>
+            <ul class="timeline-list">
+              <li>Converted static HTML templates into highly dynamic, responsive, and fully functional WordPress themes from scratch.</li>
+              <li>Developed 12+ premium themes for ThemeForest and multiple bespoke themes for direct clients.</li>
+              <li>Built custom Elementor widgets and add-ons from scratch using PHP and JavaScript.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>Elementor</span><span>PHP</span><span>JavaScript</span><span>ThemeForest</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Aug 2023 — Dec 2024</span>
+            <h3 class="timeline-role">WordPress Website Designer</h3>
+            <p class="timeline-company">Service-Based Digital Agency — Dhaka, Bangladesh (On-site)</p>
+            <ul class="timeline-list">
+              <li>Designed real client projects sourced from Fiverr and Upwork, focusing on complete WordPress setups and premium theme configurations.</li>
+              <li>Turned client briefs into clean, user-friendly designs with a focus on real-world usability.</li>
+              <li>Managed multiple projects simultaneously, balancing strict deadlines with high-quality output.</li>
+            </ul>
+            <div class="timeline-tech">
+              <span>WordPress</span><span>Plugins</span><span>Client Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-cert-grid" data-aos="fade-up">
+        <div class="edu-card">
+          <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+          <div class="edu-row">
+            <strong>B.Sc. in CSE</strong>
+            <span>Canadian University of Bangladesh · 2023 — Present</span>
+          </div>
+          <div class="edu-row">
+            <strong>Diploma in Engineering</strong>
+            <span>Greenland Polytechnic Institute · Aug 2019 — Jan 2023</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <h4><i class="fa-solid fa-certificate"></i> Certification</h4>
+          <div class="edu-row">
+            <strong>Certificate in WordPress Theme Development</strong>
+            <span>Ostad · Certificate ID: C19490</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="section section-alt" id="portfolio">
+    <span class="block-tag" aria-hidden="true">core/gallery</span>
+    <div class="container">
+      <p class="section-eyebrow" data-aos="fade-up">04 — Portfolio</p>
+      <h2 class="section-title" data-aos="fade-up">Website & Themes built from the ground up.</h2>
+      <p class="section-sub" data-aos="fade-up">A selection of premium WordPress themes and bespoke client builds. Swipe or drag to explore.</p>
+    </div>
+
+    <div class="portfolio-swiper-wrap" data-aos="fade-up">
+      <div class="swiper portfolioSwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets/website-banner/website-banner-four.png" alt="Zylo Theme preview" loading="lazy" width="640" height="420">
+                <div class="project-thumb-overlay">
+                  <a href="https://preview.themeforest.net/item/zylo-creative-business-agency-wordpress-theme/full_screen_preview/61363544?srsltid=AfmBOorFbgnTD1Cpwc-SCw4-3GTK5C72rPtlarB43iOeKExLlh4lZJNp" class="thumb-btn" aria-label="Visit Zylo Theme website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Zylo Theme</h3>
+                <p>Creative business agency WordPress theme built for ThemeForest, focused on flexible layouts and fast Elementor customization.</p>
+                <div class="project-badges"><span>WordPress</span><span>Elementor</span><span>PHP</span></div>
+                <div class="project-actions">
+                  <a href="https://preview.themeforest.net/item/zylo-creative-business-agency-wordpress-theme/full_screen_preview/61363544?srsltid=AfmBOorFbgnTD1Cpwc-SCw4-3GTK5C72rPtlarB43iOeKExLlh4lZJNp" class="link-btn">Visit website <i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="https://themeforest.net/user/softcrafty/portfolio?srsltid=AfmBOorQQpYXz-Hlk-NL9xwQDxp1UCXQwTrfZEBGIN5Xf3E6z8n8C6nn" class="link-btn ghost">View details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets/website-banner/website-banner-three.png" alt="Medice Theme preview" loading="lazy" width="640" height="420">
+                <div class="project-thumb-overlay">
+                  <a href="https://wp.softcrafty.com/medice" class="thumb-btn" aria-label="Visit Medice Theme website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Medice Theme</h3>
+                <p>Creative WordPress theme with a healthcare-ready layout, custom Elementor widgets, and clean, accessible typography.</p>
+                <div class="project-badges"><span>WordPress</span><span>Custom Widgets</span><span>WooCommerce</span></div>
+                <div class="project-actions">
+                  <a href="https://wp.softcrafty.com/medice" class="link-btn">Visit website <i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="https://themeforest.net/user/softcrafty/portfolio?srsltid=AfmBOorQQpYXz-Hlk-NL9xwQDxp1UCXQwTrfZEBGIN5Xf3E6z8n8C6nn" class="link-btn ghost" class="link-btn ghost">View details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets/website-banner/website-banner-five.png" alt="Tourgo Theme preview" loading="lazy" width="640" height="420">
+                <div class="project-thumb-overlay">
+                  <a href="https://wp.softcrafty.com/tourgo" class="thumb-btn" aria-label="Visit Tourgo Theme website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Tourgo Theme</h3>
+                <p>Creative WordPress theme built for travel &amp; tour agencies — booking-ready sections and a fully responsive Elementor build.</p>
+                <div class="project-badges"><span>WordPress</span><span>Elementor</span><span>Booking UI</span></div>
+                <div class="project-actions">
+                  <a href="https://wp.softcrafty.com/tourgo" class="link-btn">Visit website <i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="https://themeforest.net/user/softcrafty/portfolio?srsltid=AfmBOorQQpYXz-Hlk-NL9xwQDxp1UCXQwTrfZEBGIN5Xf3E6z8n8C6nn" class="link-btn ghost" class="link-btn ghost" class="link-btn ghost">View details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets/website-banner/website-banner-two.png" alt="Bespoke client build preview" loading="lazy" width="640" height="420">
+                <div class="project-thumb-overlay">
+                  <a href="https://wp.softcrafty.com/crebiz/" class="thumb-btn" aria-label="Visit client project website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Bespoke Agency Build</h3>
+                <p>Full WordPress setup for a direct client — static HTML converted to a dynamic, fully editable theme from <br>scratch.</p>
+                <div class="project-badges"><span>Custom Theme</span><span>API Integration</span><span>Speed Optimization</span></div>
+                <div class="project-actions">
+                  <a href="https://viralup.eu/" class="link-btn">Visit website <i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="https://viralup.eu/" class="link-btn ghost">View details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="swiper-slide">
+            <article class="project-card">
+              <div class="project-thumb">
+                <img src="assets/website-banner/website-banner-one.png" alt="Lovable ai to wordpress webite preview" loading="lazy" width="640" height="420">
+                <div class="project-thumb-overlay">
+                  <a href="https://viralup.eu/" class="thumb-btn" aria-label="Visit client project website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Lovable AI Design to WordPress</h3>
+                <p>Lovable AI design to functional WordPress-website.</p>
+                <div class="project-badges"><span>Custom Website</span><span>AI Design to WordPress Integration</span><span>Speed Optimization</span></div>
+                <div class="project-actions">
+                  <a href="https://viralup.eu/" class="link-btn">Visit website <i class="fa-solid fa-arrow-right"></i></a>
+                  <a href="https://viralup.eu/" class="link-btn ghost">View details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="portfolio-nav">
+        <button class="swiper-btn swiper-prev" aria-label="Previous project"><i class="fa-solid fa-arrow-left"></i></button>
+        <div class="swiper-pagination"></div>
+        <button class="swiper-btn swiper-next" aria-label="Next project"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section section-alt" id="process">
+    <span class="block-tag" aria-hidden="true">core/steps</span>
+    <div class="container">
+      <p class="section-eyebrow" data-aos="fade-up">05 — Process</p>
+      <h2 class="section-title" data-aos="fade-up">How a build comes together.</h2>
+      <p class="section-sub" data-aos="fade-up">Same four steps, every project — from a first brief to a live, editable site.</p>
+
+      <div class="process-grid">
+        <div class="process-card" data-aos="fade-up" data-aos-delay="0">
+          <span class="process-index">01</span>
+          <i class="fa-solid fa-comments process-icon"></i>
+          <h3>Discover</h3>
+          <p>Requirements, references, and a technical scope call before a single block gets placed.</p>
+        </div>
+        <div class="process-card" data-aos="fade-up" data-aos-delay="80">
+          <span class="process-index">02</span>
+          <i class="fa-solid fa-layer-group process-icon"></i>
+          <h3>Design &amp; build</h3>
+          <p>Theme, plugins, and custom widgets built from scratch — or a static design converted into a fully dynamic site.</p>
+        </div>
+        <div class="process-card" data-aos="fade-up" data-aos-delay="160">
+          <span class="process-index">03</span>
+          <i class="fa-solid fa-gauge-high process-icon"></i>
+          <h3>Test &amp; optimize</h3>
+          <p>Cross-device QA, speed optimization, and clean-up so nothing ships with rough edges.</p>
+        </div>
+        <div class="process-card" data-aos="fade-up" data-aos-delay="240">
+          <span class="process-index">04</span>
+          <i class="fa-solid fa-rocket process-icon"></i>
+          <h3>Launch &amp; support</h3>
+          <p>Deployed, documented, and handed off — with support after launch if anything needs a tweak.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <span class="block-tag" aria-hidden="true">core/contact</span>
+    <div class="container">
+      <div class="contact-center">
+        <p class="section-eyebrow center" data-aos="fade-up">06 — Contact</p>
+        <h2 class="section-title" data-aos="fade-up">Have a project in mind?</h2>
+        <p class="section-sub center" data-aos="fade-up">Tell me what you're building — I usually reply within a day.</p>
+
+        <a href="mailto:mehedidev404@gmail.com" class="btn btn-primary btn-lg" data-aos="fade-up">
+          <i class="fa-solid fa-paper-plane"></i> Email mehedidev404@gmail.com
+        </a>
+
+        <div class="contact-info-row" data-aos="fade-up">
+          <a href="tel:+8801401485109" class="contact-info-item">
+            <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <span><strong>Phone</strong><br>+880 1401-485109</span>
+          </a>
+          <div class="contact-info-item">
+            <span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span><strong>Location</strong><br>Dhaka, Bangladesh</span>
+          </div>
+        </div>
+
+        <div class="contact-socials center" data-aos="fade-up">
+          <a href="https://profiles.wordpress.org/" target="_blank" rel="noopener" aria-label="WordPress profile"><i class="fa-brands fa-wordpress"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <a href="#home" class="footer-mark" aria-label="Back to top — Mehedi.dev">
+    <span>MEHEDI</span><span class="footer-mark-accent">.DEV</span>
+  </a>
+  <div class="footer-bottom">
+    <div class="footer-socials-row">
+      <a href="https://profiles.wordpress.org/" target="_blank" rel="noopener" aria-label="WordPress profile"><i class="fa-brands fa-wordpress"></i></a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:mehedidev404@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>&copy; <span id="year"></span></p>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
